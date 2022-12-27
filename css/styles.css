@@ -79,6 +79,10 @@ background-color: var(--white-color);
   color: var(--dark-color);
 }
 
+.text {
+  color: var(--text-color);
+}
+
 .btn {
   font-weight: 500;
   font-size: 16px;
@@ -123,6 +127,9 @@ background-color: var(--white-color);
 
 /* Header */
 .page-header {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid var(--accent-color);
 }
 
@@ -188,6 +195,14 @@ background-color: var(--white-color);
 .hero-section {
   padding: 188px 0;
   text-align: center;
+
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  url(../images/background/hero-bcg.jpg);
+  background-size: cover;
+  background-position: center;
   background-color: var(--dark-color);
 }
 
@@ -227,6 +242,22 @@ background-color: var(--white-color);
   flex-basis: calc((100% - 72px) / 4);
 }
 
+.features-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+  background: var(--light-color);
+  border-radius: 4px;
+  }
+
+.features-icon {
+  width: 64px;
+  height: 64px;
+}
+
 /* Products */
 .products-list {
   display: flex;
@@ -240,6 +271,11 @@ background-color: var(--white-color);
 
 /* Team */
 .team-section {
+  padding-top: 120px;
+  padding-bottom: 110px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--light-color);
 }
 
@@ -265,8 +301,91 @@ background-color: var(--white-color);
   padding: 32px 16px;
 }
 
+.team-list-text {
+  margin-bottom: 8px;
+}
+
+/* Social list icons */
+.soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.soc-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+}
+
+.soc-list-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--light-color);
+}
+
+.soc-list-link:hover,
+.soc-list-link:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--accent-color);
+}
+
+.soc-list-link:hover .soc-list-icon,
+.soc-list-link:focus .soc-list-icon {
+  fill: var(--dark-color);
+}
+
+/* Customers */
+.customers-section {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-list-link {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--subtle-text-color);
+    border-radius: 4px;
+}
+
+.customers-list-icon {
+  width: 104px;
+  height: 56px;
+  fill: var(--subtle-text-color);
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border: 1px solid var(--pressed-state-color);
+}
+
+.customers-list-link:hover .customers-list-icon,
+.customers-list-link:focus .customers-list-icon {
+  fill: var(--pressed-state-color);
+}
+
 /* Footer */
 .page-footer {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 100px 0;
   background-color: var(--dark-color);
 }
@@ -308,6 +427,7 @@ background-color: var(--white-color);
   color: var(--white-color);
   background-color: var(--pressed-state-color);
   border-color: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Portfolio List */
@@ -325,4 +445,11 @@ background-color: var(--white-color);
 .portfolio-card-content {
   padding: 32px 16px;
   border: 1px solid var(--accent-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list-item:hover .portfolio-card-content,
+.portfolio-list-item:focus .portfolio-card-content {
+  border: 0.5px solid var(--light-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
