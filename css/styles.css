@@ -3,6 +3,7 @@
   --primary-brand-color: #4D5AE5;
   --pressed-state-color: #404BBF;
   --dark-color: #2E2F42;
+  --success-color: #31D0AA;
   --text-color: #434455;
   --subtle-text-color: #8E8F99;
   --accent-color: #E7E9FC;
@@ -345,10 +346,6 @@ background-color: var(--white-color);
   padding-bottom: 120px;
 }
 
-.customers-title {
-  margin-bottom: 72px;
-}
-
 .customers-list {
   display: flex;
   justify-content: center;
@@ -379,25 +376,6 @@ background-color: var(--white-color);
 .customers-list-link:hover .customers-list-icon,
 .customers-list-link:focus .customers-list-icon {
   fill: var(--pressed-state-color);
-}
-
-/* Footer */
-.page-footer {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 100px 0;
-  background-color: var(--dark-color);
-}
-
-.footer-logo {
-  color: var(--light-color);
-}
-
-.footer-text {
-  margin-top: 16px;
-  width: 264px;
-  color: var(--accent-color);
 }
 
 /* Portfolio */
@@ -452,4 +430,62 @@ background-color: var(--white-color);
 .portfolio-list-item:focus .portfolio-card-content {
   border: 0.5px solid var(--light-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/* Footer */
+.page-footer {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0;
+  background-color: var(--dark-color);
+}
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
+
+.footer-logo {
+  color: var(--light-color);
+}
+
+.footer-text {
+  margin-top: 16px;
+  width: 264px;
+  color: var(--accent-color);
+}
+
+.footer-soc-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.50;
+  color: var(--white-color);
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-soc-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-list-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--light-color);
+}
+
+.footer-soc-list-link:hover,
+.footer-soc-list-link:focus {
+  background-color: var(--success-color);
 }
